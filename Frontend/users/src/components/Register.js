@@ -34,7 +34,7 @@ class Register extends Component {
         .then( () => {
             window.open("/","_self");
         }).catch( (err => {
-            alert("Nome de usuário já cadastrado, por favor insira um nome de usuário diferente.")
+            alert("Houve um erro no cadastro.")
         }));
     }
 

@@ -18,12 +18,19 @@ public class UserService {
 		return repository.findAll();
 	}
 	
-	public User newUser(User entity) {
-		return repository.save(entity);
-	}
-	
 	public User findUserByUsername(String userName) {
 		return repository.findByUsername(userName);
 	}
+	
+	public void newUser(User entity) throws Exception{
+		if(repository.findByUsername(entity.getUsername()) == null) {
+			repository.save(entity);
+		} else {
+			throw new Exception("O usuário de nome " + entity.getUsername() + " já existe");
+		}
+		
+	}
+	
+
 
 }

@@ -29,7 +29,7 @@ public class UserController {
 	}
 	
 	@PostMapping
-	public ResponseEntity<String> newUser(@Valid @RequestBody User entity) {
+	public ResponseEntity<String> newUser(@Valid @RequestBody User entity) throws Exception {
 		service.newUser(entity);
 		return ResponseEntity.ok("Usuário cadastrado com sucesso.");
 	}
