@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    line-height: 1.5em;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #20B2AA;
+}
+header nav ul li .menu:link, header nav ul li .menu:visited {
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    padding:15px 20px;
+    width: 100%;
+}
+header nav ul li .menu:hover {
+    background-color: white;
+    color: #20B2AA;
+}
+
+footer {
+    background-color: #778899;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+}
+
+.main h1{
+    font-size: 50px;
+    margin: 30px;
+}
+
+.main p{
+    margin: 60px;
+}
