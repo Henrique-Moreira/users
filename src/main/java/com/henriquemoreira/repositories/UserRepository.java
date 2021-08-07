@@ -6,5 +6,5 @@ import com.henriquemoreira.entities.User;
 
 public interface UserRepository extends JpaRepository<User, Long>  {
 
-	User findByNameContainingIgnoreCase(String name);
+	User findByUsername(String userName);
 }

@@ -2,8 +2,10 @@ package com.henriquemoreira.controllers;
 
 import java.util.List;
 
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,12 +29,13 @@ public class UserController {
 	}
 	
 	@PostMapping
-	public User newUser(@RequestBody User entity) {
-		return service.newUser(entity);
+	public ResponseEntity<String> newUser(@Valid @RequestBody User entity) {
+		service.newUser(entity);
+		return ResponseEntity.ok("Usuário cadastrado com sucesso.");
 	}
 	
 	@GetMapping("/{name}")
-	public User findUserByName(@PathVariable String name) {
-		return service.findUserByName(name);
+	public User findUserByUsername(@PathVariable String name) {
+		return service.findUserByUsername(name);
 	}
 }

@@ -22,7 +22,8 @@ public class UserService {
 		return repository.save(entity);
 	}
 	
-	public User findUserByName(String name) {
-		return repository.findByNameContainingIgnoreCase(name);
+	public User findUserByUsername(String userName) {
+		return repository.findByUsername(userName);
 	}
+
 }
