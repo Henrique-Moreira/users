@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 class Register extends Component {
-    state = {
-        username: '',
-        name: '',
-        age: 0,
-        email: '',
-        password: '',
+    constructor(props) {
+        super(props);
+        this.state = {
+            username: '',
+            name: '',
+            age: 0,
+            email: '',
+            password: ''
+        }
     }
 
     handleChange = event => {
@@ -28,15 +31,14 @@ class Register extends Component {
         }
 
         axios.post('http://localhost:8080/users', user)
-        .then( res => {
-            console.log(res);
-            console.log(res.data);
+        .then( () => {
+            window.open("/","_self");
         });
     }
 
     render() {
         return (
-            <main>
+            <main className="container">
                 <section className="main">
                     <form id="login-form" className="form" onSubmit={this.handleSubmit}>
                         <h3 className="text-center text-info">Cadastro de usuários</h3>

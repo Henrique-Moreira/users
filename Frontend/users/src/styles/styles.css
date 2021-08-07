@@ -5,10 +5,22 @@
     font-family: Arial;
     line-height: 1.5em;
 }
+
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    height: 100vh;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    padding: 0px;
     background-color: #20B2AA;
 }
 header nav ul li .menu:link, header nav ul li .menu:visited {
@@ -28,10 +40,17 @@ footer {
     color: white;
     padding: 40px;
     text-align: center;
+    margin-top:auto;
 }
 
-.main {
-    text-align: center;
+footer p {
+    margin-bottom: 0px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main h1{
@@ -41,4 +60,30 @@ footer {
 
 .main p{
     margin: 60px;
+}
+
+.table-space {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-top: 20px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #20B2AA !important;
+    border: none !important;
+}
+
+thead {
+    background-color:#20b2abb2;
 }
