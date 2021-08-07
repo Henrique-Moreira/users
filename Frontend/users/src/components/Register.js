@@ -33,7 +33,9 @@ class Register extends Component {
         axios.post('http://localhost:8080/users', user)
         .then( () => {
             window.open("/","_self");
-        });
+        }).catch( (err => {
+            alert("Nome de usuário já cadastrado, por favor insira um nome de usuário diferente.")
+        }));
     }
 
     render() {
