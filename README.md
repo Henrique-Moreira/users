@@ -16,8 +16,8 @@ Esse codigo é de um Sistema Web com o Front End feito em React Js e o Back End 
 * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png" alt="javaScript-logo" width="50"/>
 
 ### Imagens do Sistema Web
-<img src="Frontend/users/public/img/cadastro.png" alt="imagem login do jogo" width="1100" height="600"/>
-<img src="Frontend/users/public/img/listagem.png" alt="imagem login do jogo" width="1100" height="600"/>
+<img src="Frontend/users/public/img/cadastro.png" alt="imagem de cadastro de usuarios"/>
+<img src="Frontend/users/public/img/listagem.png" alt="imagem de listagem de usuarios"/>
 
 
 ----------------------------
