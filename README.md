@@ -1,7 +1,7 @@
 # Users
 
 ### SOBRE O PROGRAMA
-Esse codigo é de um Sistema Web com o Front End feito em React Js e o Back End feito em Spring Boot
+Esse código é de um Sistema Web para cadastro e listagem de usuários, o Front-end foi feito em ReactJs e o Back-end foi feito em Java Spring, foi utilizado o banco de dados H2 e o Axios para fazer as requisições, além disso, foi utilizado no Front-end o bootstrap.
 
 ### DEPLOY LOCAL
 * Utilize o Spring Tols Suide para Rodar o Back-End, basta abrir em sua workspace e rodar o programa;
